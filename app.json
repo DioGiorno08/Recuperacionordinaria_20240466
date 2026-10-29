@@ -7,9 +7,9 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/image.png",
       "resizeMode": "contain",
-      "backgroundColor": "#10243a"
+      "backgroundColor": "#1d1d1b"
     },
     "android": {
       "package": "com.davideduardo.recuperacionordinaria",
@@ -22,10 +22,10 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/splash.png",
-          "imageWidth": 200,
+          "image": "./assets/image.png",
+          "imageWidth": 240,
           "resizeMode": "contain",
-          "backgroundColor": "#10243a"
+          "backgroundColor": "#1d1d1b"
         }
       ]
     ]

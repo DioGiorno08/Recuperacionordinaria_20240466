@@ -8,13 +8,15 @@ import Feedback from '../components/Feedback';
 export default function ShowsScreen() {
   const { shows, filteredShows, search, setSearch, loading, error, refetch } = useFetchData();
   const insets = useSafeAreaInsets();
+  if (loading && shows.length === 0) {
+    return <Feedback loading message="Cargando series..." />;
+  }
   return (
     <View style={[styles.page, { paddingBottom: insets.bottom }]}>
       <TextInput style={styles.input} placeholder="Buscar serie por nombre..."
         accessibilityLabel="Buscar serie por nombre" value={search} onChangeText={setSearch}
         autoCorrect={false} clearButtonMode="while-editing" />
-      {loading && shows.length === 0 ? <Feedback loading message="Cargando series..." />
-        : error ? <Feedback message={error} onRetry={refetch} />
+      {error ? <Feedback message={error} onRetry={refetch} />
         : <FlatList data={filteredShows} keyExtractor={item => String(item.id)}
           renderItem={({ item }) => <ShowCard show={item} />}
           initialNumToRender={6} windowSize={5} keyboardShouldPersistTaps="handled"
