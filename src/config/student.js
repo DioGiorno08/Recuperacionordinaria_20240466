@@ -1,0 +1,1 @@
+export const student={name:'David Eduardo López Miranda',carnet:'20240466',group:'1',section:'Tercer año de Desarrollo de Software',institution:'Instituto Técnico Ricaldone',activity:'Recuperación Ordinaria Módulo 5 – Desarrollo de componentes para dispositivos móviles'};

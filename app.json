@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Recuperación Ordinaria David",
+    "slug": "recuperacion-david",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#10243a"
+    },
+    "android": {
+      "package": "com.davideduardo.recuperacionordinaria",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#10243a"
+      }
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#10243a"
+        }
+      ]
+    ]
+  }
+}
